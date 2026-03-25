@@ -83,10 +83,6 @@ graph TB
     end
     A --- B
     A <--->|"push / pull"| C
-
-    style A fill:#E8D5F5,stroke:#7C3AED
-    style B fill:#FDE68A,stroke:#D97706
-    style C fill:#BFDBFE,stroke:#2563EB
 ```
 
 - **Repositorio local**: la carpeta en tu Mac. Trabajas aca.
@@ -107,11 +103,6 @@ graph LR
     B -->|"commit<br/>(guardar revision)"| C["Repositorio Local<br/>(historial)"]
     C -->|"push<br/>(subir)"| D["GitHub<br/>(nube)"]
     D -->|"pull<br/>(bajar)"| A
-
-    style A fill:#FEE2E2,stroke:#DC2626
-    style B fill:#FEF3C7,stroke:#D97706
-    style C fill:#D1FAE5,stroke:#059669
-    style D fill:#DBEAFE,stroke:#2563EB
 ```
 
 ### Analogia: preparar una entrega de diseno
@@ -303,12 +294,6 @@ flowchart TD
     I --> J["Tu equipo revisa<br/>y aprueba"]
     J --> K["Se hace merge a main"]
     E -->|"No, sigo"| D
-
-    style A fill:#F3E8FF,stroke:#7C3AED
-    style D fill:#FCE7F3,stroke:#DB2777
-    style F fill:#D1FAE5,stroke:#059669
-    style H fill:#DBEAFE,stroke:#2563EB
-    style I fill:#FEF3C7,stroke:#D97706
 ```
 
 ### En palabras simples
@@ -590,12 +575,6 @@ flowchart LR
     B --> C["Subir<br/>(push)"]
     C --> D["Revisar<br/>(PR)"]
     D --> E["Aprobar<br/>(merge)"]
-
-    style A fill:#F9A8D4,stroke:#DB2777
-    style B fill:#A7F3D0,stroke:#059669
-    style C fill:#93C5FD,stroke:#2563EB
-    style D fill:#FDE68A,stroke:#D97706
-    style E fill:#C4B5FD,stroke:#7C3AED
 ```
 
 La idea es simple: vos disenas, Git cuida que nada se pierda.
